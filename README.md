@@ -1,6 +1,6 @@
 # quantum-ai-models
 
-This is a block of ai models (ml/nn) self implement with PyTorch, by applying quantum-inspired optimization method, specifically focusing on attention mechanisms. (OBS: a method centralized by mimic the concept of quantum annealing to optimize hard attention mechanisms)
+This is a block of ai models (ml/nn) self implement with PyTorch, by applying quantum-inspired optimization method for training ml/neural networks, specifically focusing on attention mechanisms. (OBS: a method centralized by mimic the concept of quantum annealing to optimize hard attention mechanisms)
 
 Where generally the tradicionals models focus on the soft attention, distributing focus all around the inputs with its varying weighs. In other hand, 
 our goal is the hard attention focus on specific important inputs, resulting a interpretable and a possible more efficent model.
