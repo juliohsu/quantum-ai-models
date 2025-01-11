@@ -9,7 +9,7 @@ Objective: make the model training cheaper and interpretable.
 
 What-to-do: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
 
-How-to-do:
+How-to-do:<br>
 1 - implement hard attention<br>
 2 - incorporate quantum annealing<br>
 3 - training loop adjustment<br>
