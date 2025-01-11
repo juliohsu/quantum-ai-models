@@ -7,7 +7,7 @@ our goal is the hard attention focus on specific important inputs, resulting a i
 
 Objective: make the model training cheaper and interpretable.
 
-What-to-do: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
+What-To-Do: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
 
 How-to-do:<br>
 1 - implement hard attention<br>
@@ -15,7 +15,7 @@ How-to-do:<br>
 3 - training loop adjustment<br>
 
 Files:
- - "model.py" is a file for training the model that uses QAHAN
- - "noisys_data.py" is a file that generates kind of realistic world data, with noises and etc
+ - "model.py" is a file of self implement PyTorch linear regression model that applies QAHAN techniques.
+ - "noisys_data.py" is a file of dataset that generates kind of realistic world data, with noises and etc.
 
  Source: https://arxiv.org/abs/2412.20930
