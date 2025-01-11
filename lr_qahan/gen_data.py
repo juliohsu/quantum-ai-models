@@ -26,8 +26,13 @@ y[::10] += torch.randn(10, 1) * 20
 
 # exporting the dataset (cat of features and target) into csv file
 file = torch.cat([X_final, y], dim=1)
+file2 = torch.cat([X, y], dim=1)
+
 file = pd.DataFrame(file)
-file.to_csv("noisy_dataset", index=False)
+file2 = pd.DataFrame(file2)
+
+file.to_csv("dataset_noisy", index=False)
+file2.to_csv("dataset_clean", index=False)
 
 # visualize the result dataset
 plt.scatter(X_final[:, 0].numpy(), y.numpy(), label="Noisy dataset")
