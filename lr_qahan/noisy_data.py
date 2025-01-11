@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.optim as optimm
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 # planting random seed
 torch.manual_seed(42)
@@ -22,7 +23,11 @@ X_final = torch.cat([X_combined, X ** 2 + X * 3], dim=1)
 
 # create outlier for 10th output sequences to mimic real world incertain
 y[::10] += torch.randn(10, 1) * 20
-print(y)
+
+# exporting the dataset (cat of features and target) into csv file
+file = torch.cat([X_final, y], dim=1)
+file = pd.DataFrame(file)
+file.to_csv("noisy_dataset", index=False)
 
 # visualize the result dataset
 plt.scatter(X_final[:, 0].numpy(), y.numpy(), label="Noisy dataset")
