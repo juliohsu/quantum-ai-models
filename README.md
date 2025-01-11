@@ -10,9 +10,9 @@ Objective: make the model training cheaper and interpretable.
 What-to-do: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
 
 How-to-do:
-1 - implement hard attention
-2 - incorporate quantum annealing
-3 - training loop adjustment
+1 - implement hard attention<br>
+2 - incorporate quantum annealing<br>
+3 - training loop adjustment<br>
 
 Files:
  - "model.py" is a file for training the model that uses QAHAN
