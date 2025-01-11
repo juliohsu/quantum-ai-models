@@ -24,6 +24,7 @@ y[::10] += torch.randn(10, 1) * 20
 
 # combine two dataset
 X_final = torch.cat([X_combined, X_interaction], dim=1)
+print(X_final)
 
 # visualize the result dataset
 plt.scatter(X_final[:, 0].numpy(), y.numpy(), label="Noisy dataset")
