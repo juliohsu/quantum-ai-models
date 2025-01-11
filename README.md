@@ -7,12 +7,17 @@ our goal is the hard attention focus on specific important inputs, resulting a i
 
 Objective: make the model training cheaper and interpretable.
 
-What-To-Do: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
+Resume: apply quantum tunneling to escape local minima and find the global minimium in a complex energy landscape.
 
-How-to-do:<br>
+Code explain:<br>
 1 - implement hard attention<br>
 2 - incorporate quantum annealing<br>
 3 - training loop adjustment<br>
+
+How to run the code to test it out?<br>
+Firstly, try to run the code with the model2 and the clean dataset, then change the dataset to the noisy one and run again.
+From that aspect, you will notice that the model2 will break if we try to run it with the noisy dataset, so its time to show
+our quantum model which is the model, and it will run normally without breaking out! Cool right?
 
 Files:
  - "model.py" is a file of self implement PyTorch linear regression model that applies QAHAN techniques.
